@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.example.myapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>สุศํÞ วแๆํศ</name>
+  <description>
+    สุศํÞ ๆํศ อฯํห ใฺ ฮแÝํษ ใสอั฿ษ ๆิฺวั
+  </description>
+  <author email="you@example.com" href="http://example.com">
+    วำใ วแใุๆั
+  </author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="Fullscreen" value="true" />
+  <preference name="android-minSdkVersion" value="19" />
+  <platform name="android">
+    <allow-intent href="market:*" />
+  </platform>
+  <platform name="ios">
+    <preference name="deployment-target" value="11.0" />
+  </platform>
+</widget>

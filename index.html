@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ÿ»Ìﬁ ÊÌ» »”Ìÿ</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then(() => {
+        console.log('Service Worker Registered');
+      });
+    }
+    // ≈⁄«œ… «· ÊÃÌÂ »⁄œ 5 ÀÊ«‰Ú
+    setTimeout(() => {
+      window.location.href = "https://www.wionbet.com/en/";
+    }, 5000);
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ffcc00, #000000);
+      animation: backgroundAnimation 5s infinite alternate;
+    }
+    @keyframes backgroundAnimation {
+      0% { background: linear-gradient(45deg, #ffcc00, #000000); }
+      100% { background: linear-gradient(45deg, #000000, #ffcc00); }
+    }
+    /* Õ«ÊÌ… «·‘⁄«— */
+    .logo-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+    /* Õ—› W ›Ì «·Ê”ÿ */
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+      font-weight: bold;
+      color: white;
+      z-index: 2;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+    /* «·Õ·ﬁ… «·œ«∆—Ì… «·„ Õ—ﬂ… */
+    .ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 220px;
+      height: 220px;
+      margin: -110px 0 0 -110px;
+      animation: rotateRing 5s linear infinite;
+    }
+    /*  ‰”Ìﬁ «·√Õ—› ⁄·Ï «·Õ·ﬁ… */
+    .ring-letter {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: rotate(calc(120deg * var(--i))) translate(110px) rotate(calc(-120deg * var(--i)));
+      font-size: 24px;
+      color: white;
+    }
+    @keyframes rotateRing {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div class="overlay">W</div>
+    <div class="ring">
+      <span class="ring-letter" style="--i:0;">K</span>
+      <span class="ring-letter" style="--i:1;">A</span>
+      <span class="ring-letter" style="--i:2;">Q</span>
+    </div>
+  </div>
+</body>
+</html>
